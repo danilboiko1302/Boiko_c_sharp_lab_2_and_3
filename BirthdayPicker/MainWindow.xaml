@@ -1,0 +1,39 @@
+﻿<Window x:Class="BirthdayPicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BirthdayPicker"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        Title="Birthday computer application" Height="500" Width="700">
+    <Grid IsEnabled="{Binding IsControlEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MaxHeight="30px"/>
+            <RowDefinition  MaxHeight="35px"/>
+            <RowDefinition Height="Auto" MaxHeight="30px"/>
+            <RowDefinition MaxHeight="35px"/>
+            <RowDefinition Height="Auto" MaxHeight="30px" />
+            <RowDefinition  MaxHeight="35px"/>
+            <RowDefinition Height="Auto" MaxHeight="30px"/>
+            <RowDefinition Height="Auto" MaxHeight="40px"/>
+            <RowDefinition Height="Auto" MaxHeight="40px"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label      Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Left"  VerticalAlignment="Center" FontWeight="Bold" FontSize="14" Content="First name"/>
+        <TextBox Grid.Row="1" Margin="5" Text="{Binding FirstName, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <Label      Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Left"  VerticalAlignment="Center" FontWeight="Bold" FontSize="14" Content="Last name"/>
+        <TextBox Grid.Row="3"  Margin="5" Text="{Binding LastName, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <Label      Grid.Row="4" Grid.Column="0"  HorizontalAlignment="Left"  VerticalAlignment="Center" FontWeight="Bold" FontSize="14" Content="Email"/>
+        <TextBox Grid.Row="5" Margin="5" Text="{Binding Email, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <Label      Grid.Row="6" Grid.Column="0" HorizontalAlignment="Left"  VerticalAlignment="Center" FontWeight="Bold" FontSize="14" Content="Birthday date"/>
+        <DatePicker Grid.Row="7" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10" FirstDayOfWeek="Monday" IsTodayHighlighted="True" SelectedDate="{Binding Date, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button     Grid.Row="8" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin ="20 10 60 0" Padding="5"  Content="Proceed" Command="{Binding ProceedCommand}"/>
+        <fa:ImageAwesome Grid.Row="9" Grid.ColumnSpan="2" Icon="Refresh" Margin ="20" Width="50" Height="50" Spin="True" Visibility="{Binding LoaderVisibility, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"></fa:ImageAwesome>
+        <TextBlock  Grid.Column="1"  Grid.RowSpan="9" FontWeight="Bold" VerticalAlignment="Stretch" FontSize="17" Margin="0 10 0 0" Text="{Binding ResultInfo, Mode=oneWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+        </Grid>
+</Window>

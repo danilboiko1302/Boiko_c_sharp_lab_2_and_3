@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\User\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\User\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_KMA.ProgrammingInCSharp2019.BirthdayPicker.-526268712.00" t="ExcludeRecursive" />
+    <e p="E:\Boiko_c_sharp_lab_2_and_3" t="IncludeFlat">
+      <e p="BirthdayPicker" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BirthdayPicker.csproj" t="IncludeRecursive" />
+        <e p="Exceptions.cs" t="Include" />
+        <e p="MainWindow.xaml" t="Include" />
+        <e p="MainWindow.xaml.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="Person.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="App.g.cs" t="Include" />
+            <e p="MainWindow.g.cs" t="Include" />
+          </e>
+        </e>
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="Annotations.cs" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Tools" t="Include">
+          <e p="BaseViewModel.cs" t="Include" />
+          <e p="ILoaderOwner.cs" t="Include" />
+          <e p="Managers" t="Include">
+            <e p="LoaderManager.cs" t="Include" />
+          </e>
+          <e p="RelayCommand.cs" t="Include" />
+        </e>
+        <e p="ViewModels" t="Include">
+          <e p="BirthdayPickerViewModel.cs" t="Include" />
+        </e>
+      </e>
+      <e p="KMA.ProgrammingInCSharp2019.BirthdayPicker.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
